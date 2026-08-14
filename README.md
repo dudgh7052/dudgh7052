@@ -19,10 +19,11 @@
 <td width="25%" align="center">
 <img src="./assets/awards/indiecraft.png" width="140">
 <br>
-<b>IndieCraft 2026</b>
+<b>INDIECRAFT 2026</b>
 <br>
-<sub>Understander · 챌린저 부문 입상</sub>
+<sub>Understander · 챌린저 부문 선정</sub>
 </td>
+
 <td width="25%" align="center">
 <img src="./assets/awards/bic.png" width="140">
 <br>
@@ -30,6 +31,7 @@
 <br>
 <sub>Understander · 루키부문 선정</sub>
 </td>
+
 <td width="25%" align="center">
 <img src="./assets/awards/beaverrocks.png" width="140">
 <br>
@@ -37,6 +39,7 @@
 <br>
 <sub>Understander · 온라인 선정</sub>
 </td>
+
 <td width="25%" align="center">
 <img src="./assets/awards/ggc-2021.png" width="140">
 <br>
@@ -58,22 +61,20 @@
 **Team Project · Client Programmer · 5인 팀**  
 `2024.08 ~ Present`
 
-BIC, IndieCraft, BEAVER ROCKS 선정 및 입상과 실제 출시까지 경험한 팀 프로젝트입니다.  
-Player / Enemy / Stage / UI 등 **게임 플레이와 진행에 필요한 클라이언트 시스템 개발 및 기능 통합**에 참여했습니다.
+BIC, INDIECRAFT, BEAVER ROCKS 선정 및 입상, 실제 출시까지 경험한 팀 프로젝트입니다.  
+**Player 액션과 Enemy / Boss 전투를 중심으로 게임플레이 핵심 시스템을 설계하고 구현했습니다.**
 
 ### 주요 개발
 
-- **Player FSM** — 복잡해지는 Player 행동 분기를 관리하기 위해 State Pattern 기반 FSM을 적용하고 `Idle / Run / Jump / Fall / Dash / Skill` 상태별 행동과 전이 책임을 분리
-- **Generic EventBus** — Player / Enemy / UI 등 시스템 간 직접 참조를 줄이기 위해 Generic EventBus를 구현하고 이벤트 기반 통신 구조 구성
-- **Enemy / Boss Combat** — `BaseEnemy`에서 피해·사망 등 공통 로직을 분리하고, 적 타입별 `Patrol / Chase / Attack` 행동과 Boss별 전투 패턴 구현
-- **Object Pooling** — Projectile / Effect 등 반복 생성되는 오브젝트를 재사용하여 `Instantiate / Destroy` 호출을 줄이는 Pooling 구조 적용
-- **Unity Input System** — `Player / UI / TimingCommand` Action Map을 분리하여 상황별 입력을 관리하고 Keyboard / Gamepad 입력 및 진동 처리 통합
-
-`FSM` `EventBus` `Enemy AI` `Object Pooling` `Unity Input System`
+- **Player FSM** — State Pattern 기반 FSM으로 `Idle / Run / Jump / Fall / Dash / Skill` 상태의 행동과 전이 책임 분리
+- **Generic EventBus** — Player / Enemy / UI 간 직접 참조를 줄이고 이벤트 기반 통신 구조 구현
+- **Enemy / Boss Combat** — `BaseEnemy` 기반 공통 로직과 적별 AI, Boss 전투 패턴 구현
+- **Object Pooling** — Projectile / Effect 등 반복 생성 오브젝트를 재사용하여 생성·삭제 비용 감소
+- **Unity Input System** — `Player / UI / TimingCommand` Action Map 분리 및 Keyboard / Gamepad 입력 통합
 
 ### 성과 및 출시
 
-- 🏆 **2026 IndieCraft 챌린저 부문 입상**
+- 🏆 **2026 INDIECRAFT 챌린저 부문 선정**
 - 🏆 **BIC Festival 2025 루키부문 선정**
 - 🏆 **BEAVER ROCKS 2025 온라인 선정**
 - 🎮 **STOVE 출시**
@@ -91,17 +92,24 @@ Player / Enemy / Stage / UI 등 **게임 플레이와 진행에 필요한 클라
 
 ### DestinyBoard
 
-<img src="./assets/projects/destinyboard.gif" width="100%">
+<img src="./assets/projects/destinyboard.gif" width="85%">
+</div>
 
 **Graduation Project · Client Programmer · 6인 팀**  
 `2025.09 ~ Present`
 
 NodeCanvas의 Behavior Tree를 활용해 **Enemy / Boss AI와 전투 시스템을 설계하고 구현한 졸업작품**입니다.
 
+### 주요 개발
+
 - NodeCanvas Behavior Tree 기반 Enemy / Boss AI 구현
 - Enemy 및 Boss별 전투 로직과 공격 패턴 구현
 - Player와 Enemy 간 Combat System 구현
 - 반복적으로 활용할 수 있는 UI Tween 구조 설계 및 구현
+
+`Behavior Tree` `Enemy AI` `Combat System` `UI Tween`
+
+### 링크
 
 [Team Repository](https://github.com/Butterwafle/DestinyBoard)
 
@@ -109,12 +117,15 @@ NodeCanvas의 Behavior Tree를 활용해 **Enemy / Boss AI와 전투 시스템�
 
 ### MazeElf
 
-<img src="./assets/projects/mazeelf.gif" width="100%">
+<img src="./assets/projects/mazeelf.gif" width="85%">
+</div>
 
 **Personal Project · 3D Action**  
 `2025.06 ~ 2026.03`
 
 새로운 무기와 공격 방식을 쉽게 추가할 수 있는 **확장 가능한 전투 시스템 설계**를 목표로 제작한 개인 프로젝트입니다.
+
+### 주요 개발
 
 - Player / Enemy FSM 기반 상태 및 행동 관리
 - ScriptableObject 기반 Weapon / Attack 데이터 구조 설계
@@ -124,19 +135,24 @@ NodeCanvas의 Behavior Tree를 활용해 **Enemy / Boss AI와 전투 시스템�
 
 `FSM` `ScriptableObject` `Object Pooling` `Unity Input System`
 
+### 링크
+
 [Repository](https://github.com/dudgh7052/MazeElf)
 
 ---
 
 ### ColorPop
 
-<img src="./assets/projects/colorpop.gif" width="100%">
+<img src="./assets/projects/colorpop.gif" width="85%">
+</div>
 
 **Personal Project · Modular / Data-Driven Architecture**  
 `2026.04 ~ Present`
 
 게임 기능을 독립적으로 관리하고 재사용할 수 있도록  
 **공통 시스템을 모듈화하고 ScriptableObject 기반의 Data-Driven 구조를 적용한 프로젝트입니다.**
+
+### 주요 개발
 
 - Character / Ability / Monster / Stage 데이터를 ScriptableObject로 구조화
 - Gameplay / Stage / UI / Data 영역을 역할과 책임에 따라 분리
@@ -146,19 +162,24 @@ NodeCanvas의 Behavior Tree를 활용해 **Enemy / Boss AI와 전투 시스템�
 
 `Modular Architecture` `ScriptableObject` `Data-Driven Design` `Object Pooling`
 
+### 링크
+
 [Repository](https://github.com/dudgh7052/ColorPop)
 
 ---
 
 ### Lacapium
 
-<img src="./assets/projects/lacapium.gif" width="100%">
+<img src="./assets/projects/lacapium.gif" width="85%">
+</div>
 
 **Team Project · Client Programmer · 5인 팀**  
 `2021`
 
 팀 단위 개발부터 수상과 모바일 스토어 출시까지 경험한 프로젝트로,  
 **게임을 실제 완성하고 배포하는 전체 개발 과정을 경험한 첫 팀 프로젝트입니다.**
+
+### 주요 개발
 
 - Unity 기반 게임 클라이언트 기능 개발
 - 팀원과의 기능 개발 및 프로젝트 통합
@@ -169,6 +190,8 @@ NodeCanvas의 Behavior Tree를 활용해 **Enemy / Boss AI와 전투 시스템�
 - 🏆 **Global Game Challenge 2021 동상**
 - 🎮 **Google Play 출시**
 - 🎮 **ONE store 출시**
+
+### 링크
 
 [Project](https://youtu.be/XJTS5xvgCeI?si=fHYrh7iSi9JDA75t)
 
