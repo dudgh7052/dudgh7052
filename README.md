@@ -6,53 +6,50 @@
 
 **확장 가능하고 유지보수하기 좋은 게임 시스템을 설계하는 Unity 클라이언트 프로그래머**
 
-`Unity` `C#` `FSM` `ScriptableObject` `Object Pooling`
+`Unity` `C#` `FSM` `EventBus` `ScriptableObject` `Object Pooling`
 
 </div>
 
 ---
 
-## 🏆 Awards & Selections
+## 🏆 수상 및 선정
 
 <table>
 <tr>
-<td width="50%" align="center">
-<img src="./assets/awards/indiecraft.png" width="100%">
+<td width="25%" align="center">
+<img src="./assets/awards/indiecraft.png" width="140">
 <br>
-<b>2026 IndieCraft</b>
+<b>IndieCraft 2026</b>
 <br>
-Understander · 챌린저 부문 입상
+<sub>Understander · 챌린저 부문 입상</sub>
 </td>
-<td width="50%" align="center">
-<img src="./assets/awards/bic.png" width="100%">
+<td width="25%" align="center">
+<img src="./assets/awards/bic.png" width="140">
 <br>
 <b>BIC Festival 2025</b>
 <br>
-Understander · 루키부문 선정
+<sub>Understander · 루키부문 선정</sub>
 </td>
-</tr>
-
-<tr>
-<td width="50%" align="center">
-<img src="./assets/awards/beaverrocks.png" width="100%">
+<td width="25%" align="center">
+<img src="./assets/awards/beaverrocks.png" width="140">
 <br>
 <b>BEAVER ROCKS 2025</b>
 <br>
-Understander · 온라인 선정
+<sub>Understander · 온라인 선정</sub>
 </td>
-<td width="50%" align="center">
-<img src="./assets/awards/ggc-2021.png" width="100%">
+<td width="25%" align="center">
+<img src="./assets/awards/ggc-2021.png" width="140">
 <br>
 <b>Global Game Challenge 2021</b>
 <br>
-Lacapium · 동상
+<sub>Lacapium · 동상</sub>
 </td>
 </tr>
 </table>
 
 ---
 
-## 🔥 Main Project
+## 🔥 대표 프로젝트
 
 ### Understander
 
@@ -66,10 +63,13 @@ Player / Enemy / Stage / UI 등 **게임 플레이와 진행에 필요한 클라
 
 ### 주요 개발
 
-- Player Action 및 Enemy / Boss 전투 로직 구현
-- Object Pooling 기반 반복 생성 오브젝트 관리
-- Stage / CheckPoint / Portal 등 게임 진행 시스템 구현
-- UI / Audio 등 게임 클라이언트 기능 개발 및 통합
+- **Player FSM** — 복잡해지는 Player 행동 분기를 관리하기 위해 State Pattern 기반 FSM을 적용하고 `Idle / Run / Jump / Fall / Dash / Skill` 상태별 행동과 전이 책임을 분리
+- **Generic EventBus** — Player / Enemy / UI 등 시스템 간 직접 참조를 줄이기 위해 Generic EventBus를 구현하고 이벤트 기반 통신 구조 구성
+- **Enemy / Boss Combat** — `BaseEnemy`에서 피해·사망 등 공통 로직을 분리하고, 적 타입별 `Patrol / Chase / Attack` 행동과 Boss별 전투 패턴 구현
+- **Object Pooling** — Projectile / Effect 등 반복 생성되는 오브젝트를 재사용하여 `Instantiate / Destroy` 호출을 줄이는 Pooling 구조 적용
+- **Unity Input System** — `Player / UI / TimingCommand` Action Map을 분리하여 상황별 입력을 관리하고 Keyboard / Gamepad 입력 및 진동 처리 통합
+
+`FSM` `EventBus` `Enemy AI` `Object Pooling` `Unity Input System`
 
 ### 성과 및 출시
 
@@ -79,7 +79,7 @@ Player / Enemy / Stage / UI 등 **게임 플레이와 진행에 필요한 클라
 - 🎮 **STOVE 출시**
 - 🎮 **Steam Demo 출시**
 
-### Links
+### 링크
 
 [Repository](https://github.com/dudgh7052/Understander) ·
 [STOVE](https://store.onstove.com/ko/games/101948) ·
@@ -87,7 +87,7 @@ Player / Enemy / Stage / UI 등 **게임 플레이와 진행에 필요한 클라
 
 ---
 
-## 🎮 Featured Projects
+## 🎮 주요 프로젝트
 
 ### DestinyBoard
 
@@ -164,7 +164,7 @@ NodeCanvas의 Behavior Tree를 활용해 **Enemy / Boss AI와 전투 시스템�
 - 팀원과의 기능 개발 및 프로젝트 통합
 - 모바일 플랫폼 빌드 및 출시 경험
 
-### 성과
+### 성과 및 출시
 
 - 🏆 **Global Game Challenge 2021 동상**
 - 🎮 **Google Play 출시**
@@ -174,20 +174,19 @@ NodeCanvas의 Behavior Tree를 활용해 **Enemy / Boss AI와 전투 시스템�
 
 ---
 
-## 🛠 Tech Stack
+## 🛠 기술 스택
 
 | Category | Skills |
 |---|---|
 | **Engine / Language** | Unity · C# |
-| **Architecture** | FSM · Behavior Tree · ScriptableObject · Data-Driven Design |
-| **Programming** | Object Pooling · Interface / Abstraction |
-| **Unity Systems** | Input System · Cinemachine · Timeline · Localization · AudioMixer |
+| **Architecture / Patterns** | FSM · EventBus · Behavior Tree · Data-Driven Design · Object Pooling |
+| **Unity Systems** | ScriptableObject · Input System · Cinemachine · Timeline · Localization · AudioMixer |
 | **Libraries** | DOTween · NodeCanvas |
-| **Collaboration** | Git · GitHub |
+| **Version Control** | Git · GitHub |
 
 ---
 
-## 📂 More Projects
+## 📂 기타 프로젝트
 
 | Project | Period | Main Focus |
 |---|---|---|
@@ -196,25 +195,24 @@ NodeCanvas의 Behavior Tree를 활용해 **Enemy / Boss AI와 전투 시스템�
 
 ---
 
-## 🎓 Education
+## 🎓 학력
 
 **동양대학교 게임학부**  
 `2021.03 ~ 2027.02 졸업예정`
 
 ---
 
-## 📜 Certification
+## 📜 자격증
 
 **정보처리기능사**  
 `2019.11.07`
 
 ---
 
-## 📫 Contact
+## 📫 연락처
 
 **장영호 · JANG YOUNGHO**  
 Unity Client Programmer
 
 Email · `wkd7052@gmail.com`  
-GitHub · [github.com/dudgh7052](https://github.com/dudgh7052)  
-Portfolio · [Notion Portfolio](NOTION_LINK)
+GitHub · [github.com/dudgh7052](https://github.com/dudgh7052)
