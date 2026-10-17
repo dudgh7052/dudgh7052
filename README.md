@@ -12,38 +12,47 @@
 
 ## 🏆 수상 · 선정 · 전시
 
-<table>
+<table width="100%">
   <tr>
-    <td width="20%" align="center">
+    <td width="33%" align="center">
+      <img src="./assets/awards/gstar.svg" width="120" alt="G-STAR 로고">
+      <br>
+      <b>2026 G-STAR</b>
+      <br>
+      <sub>인디 쇼케이스 2.0: Galaxy</sub>
+    </td>
+    <td width="33%" align="center">
       <img src="./assets/awards/playx4.png" width="120" alt="PlayX4 로고">
       <br>
       <b>2026 PlayX4</b>
       <br>
       <sub>인디오락실 선정 및 전시</sub>
     </td>
-    <td width="20%" align="center">
+    <td width="33%" align="center">
       <img src="./assets/awards/indiecraft.png" width="120" alt="INDIECRAFT 로고">
       <br>
       <b>2026 인디크래프트</b>
       <br>
       <sub>챌린저 부문 TOP 20</sub>
     </td>
-    <td width="20%" align="center">
+  </tr>
+  <tr>
+    <td width="33%" align="center">
       <img src="./assets/awards/bic.png" width="120" alt="BIC Festival 로고">
       <br>
       <b>BIC Festival 2025</b>
       <br>
       <sub>루키 부문 선정 및 전시</sub>
     </td>
-    <td width="20%" align="center">
+    <td width="33%" align="center">
       <img src="./assets/awards/beaverrocks.png" width="120" alt="BEAVER ROCKS 로고">
       <br>
       <b>2025 비버롹스</b>
       <br>
       <sub>온라인 선정 및 전시</sub>
     </td>
-    <td width="20%" align="center">
-      <img src="./assets/awards/ggc-2021.png" width="120" alt="Global Game Challenge 로고">
+    <td width="33%" align="center">
+      <img src="./assets/awards/ggc-2021.jpg" width="120" alt="Global Game Challenge 2021">
       <br>
       <b>GGC 2021</b>
       <br>
@@ -58,10 +67,10 @@
 
 ### Understander
 
-<img src="./assets/projects/understander.gif" width="100%" alt="Understander Gameplay">
+<img src="./assets/projects/Understander_Banner.png" width="100%" alt="Understander">
 
 > 2D 횡스크롤 액션 어드벤처 · 팀 프로젝트 · 클라이언트 프로그래머 · 5인 팀  
-> 2024.08 ~ 현재
+> 2024.09 ~ 현재
 
 플레이어 액션, 이벤트 기반 시스템 통신, 스테이지 진행, Enemy / Boss 전투 시스템을 구현했습니다.
 
@@ -76,7 +85,7 @@
 
 ### DestinyBoard
 
-<img src="./assets/projects/destinyboard.gif" width="100%" alt="DestinyBoard Gameplay">
+<img src="./assets/projects/DestinyBoard_Banner.png" width="100%" alt="DestinyBoard">
 
 > 2D 탑다운 액션 로그라이트 · 졸업작품 · 클라이언트 프로그래머 · 6인 팀  
 > 2025.09 ~ 현재
