@@ -85,7 +85,8 @@
 
 `Analysis Combat` · `Behavior Tree AI` · `VFX Pooling` · `Feedback System`
 
-[프로젝트 포트폴리오](https://github.com/dudgh7052/DestinyBoard-Portfolio)
+[프로젝트 포트폴리오](https://github.com/dudgh7052/DestinyBoard-Portfolio) ·
+[Gameplay](https://youtu.be/yLrEhASMjsk)
 
 ---
 
